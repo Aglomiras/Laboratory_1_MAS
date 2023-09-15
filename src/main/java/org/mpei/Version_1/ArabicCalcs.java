@@ -1,6 +1,6 @@
-package org.mpei;
+package org.mpei.Version_1;
 
-public class ArabicCalcs extends Calculations{
+public class ArabicCalcs extends Calculations {
     @Override
     public void addition(String valA, String valB) {
         int intValA = Integer.parseInt(valA);

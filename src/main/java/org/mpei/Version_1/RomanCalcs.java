@@ -1,4 +1,6 @@
-package org.mpei;
+package org.mpei.Version_1;
+
+import org.mpei.Version_1.Calculations;
 
 public class RomanCalcs extends Calculations {
     @Override
@@ -71,7 +73,7 @@ public class RomanCalcs extends Calculations {
     public static String arabicToRoman(int val) {
         switch (val) {
             case (0):
-                return "O";
+                return "";
             case (1):
                 return "I";
             case (2):
@@ -95,8 +97,10 @@ public class RomanCalcs extends Calculations {
         }
     }
     public static void romanRes(int val) {
-        if (val / 10 == 0) {
+        if (val / 10 == 0 && val % 10 != 0) {
             System.out.println(arabicToRoman(val));
+        } else if (val / 10 == 0 && val % 10 == 0) {
+            System.out.println("O");
         } else if (val / 10 == 1) {
             System.out.println("X" + arabicToRoman(val % 10));
         } else if (val / 10 == 2) {
