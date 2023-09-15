@@ -11,11 +11,6 @@ public class NumberIdentifier {
         }
     }
     public static boolean isRomanNumber(String number) {
-//        if (Pattern.matches("[a-zA-Z]+", number)) {
-//            return true;
-//        } else {
-//            return false;
-//        }
         switch (number) {
             case ("O"):
                 return true;
